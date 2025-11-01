@@ -20,8 +20,8 @@
     --pallete-brand-950: #1b1a4cff;
 
     // neutral
-    --pallete-neutral-black: #000000ff;
-    --pallete-neutral-white: #ffffffff;
+    --pallete-Neutral-black: #000000ff;
+    --pallete-Neutral-white: #ffffffff;
 
     // gray
     --pallete-gray-50: #f7f7f7ff;
@@ -60,17 +60,17 @@
     --pallete-cool-gray-900: #0f172aff;
     --pallete-cool-gray-950: #020617ff;
     // blue
-    --pallete-blue-50: #eff6ffff;
-    --pallete-blue-100: #dbeafeff;
-    --pallete-blue-200: #bfdbfeff;
-    --pallete-blue-300: #93c5fdff;
-    --pallete-blue-400: #60a5faff;
-    --pallete-blue-500: #3b82f6ff;
-    --pallete-blue-600: #2563ebff;
-    --pallete-blue-700: #1d4ed8ff;
-    --pallete-blue-800: #1e40afff;
-    --pallete-blue-900: #1e3a8aff;
-    --pallete-blue-950: #172554ff;
+    --pallete-Blue-50: #eff6ffff;
+    --pallete-Blue-100: #dbeafeff;
+    --pallete-Blue-200: #bfdbfeff;
+    --pallete-Blue-300: #93c5fdff;
+    --pallete-Blue-400: #60a5faff;
+    --pallete-Blue-500: #3b82f6ff;
+    --pallete-Blue-600: #2563ebff;
+    --pallete-Blue-700: #1d4ed8ff;
+    --pallete-Blue-800: #1e40afff;
+    --pallete-Blue-900: #1e3a8aff;
+    --pallete-Blue-950: #172554ff;
     // cyan
     --pallete-cyan-50: #f0f9ffff;
     --pallete-cyan-100: #e5f6ffff;
@@ -172,10 +172,10 @@
     //core tokens
     //background
     --background: var(--pallete-neutral-white);
-    --background-hover: rgba(140, 140, 140, 
-    --background-active: rgba(140, 140, 140, 0.5); //gray-500@50
-    --background-selected: rgba(140, 140, 140, 0.2); //gray-500@20
-    --background-selected-hover: rgba(140, 140, 140, 0.32); //gray-500@32
+    --background-hover: rgba(var(pallete-gray-500), 0.12);
+    --background-active: rgba(var(pallete-gray-500), 0.5);
+    --background-selected: rgba(var(pallete-gray-500), 0.2);
+    --background-selected-hover: rgba(var(pallete-gray-500), 0.32);
     --background-inverse: var(--pallete-gray-900);
     --background-inverse-hover: var(--pallete-gray-800);
     --background-brand: var(--pallete-brand-500);
@@ -209,11 +209,11 @@
     --fg-primary: var(--pallete-gray-900);
     --fg-secondary: var(--pallete-gray-600);
     --fg-placeholder: var(--pallete-gray-400);
-    --fg-on-color: var(--pallete-neutral-white);
+    --fg-on-color: var(--Default-Neutral-white);
     --fg-on-color-disabled: var(--pallete-gray-500);
     --fg-helper: var(--pallete-gray-500);
     --fg-error: var(--Default-Red-60);
-    --fg-inverse: var(--pallete-neutral-white);
+    --fg-inverse: var(--Default-Neutral-white);
     --fg-disabled: var(--pallete-gray-400);
     //link
     --link-primary: var(--pallete-brand-500);
@@ -239,7 +239,7 @@
     --focus-inverse: var(--pallete-neutral-white);
     --interactive: var(--pallete-brand-500);
     --highlight: var(--pallete-brand-200);
-    --overlay: rgba(10, 10, 10, 0.5); //gray-950@50
+    --overlay: rgba(var(pallete-gray-950), 0.5);
     --skeleton-element: var(--pallete-gray-300);
     --skeleton-background: var(--pallete-gray-100);
 
@@ -267,7 +267,7 @@
     --button-separator: var(--pallete-gray-300);
     --button-disabled: var(--pallete-gray-400);
     // notification
-    --notification-info-background: var(--Default-blue-10);
+    --notification-info-background: var(--Default-Blue-10);
     --notification-info-border: #0043ce4d;
     --notification-success-background: var(--Default-Green-10);
     --notification-success-border: #24a1484d;
@@ -275,15 +275,15 @@
     --notification-error-border: #da1e284d;
     --notification-warning-background: var(--Default-Yellow-10);
     --notification-warning-border: #f1c21b4d;
-    --notification-action-hover: var(--pallete-neutral-white);
-    --notification-action-tertiary-inverse: var(--pallete-neutral-white);
+    --notification-action-hover: var(--Default-Neutral-white);
+    --notification-action-tertiary-inverse: var(--Default-Neutral-white);
     --notification-action-tertiary-inverse-text: var(--Default-Cool-Gray-100);
     --notification-action-tertiary-inverse-hover: var(--surface-primary-hover);
     // tag
-    --blue-tag-background-blue: var(--pallete-brand-100);
-    --blue-tag-color-blue: var(--pallete-brand-500);
-    --blue-tag-hover-blue: var(--pallete-brand-200);
-    --blue-tag-border-blue: var(--pallete-brand-400);
+    --Blue-tag-background-blue: var(--pallete-brand-100);
+    --Blue-tag-color-blue: var(--pallete-brand-500);
+    --Blue-tag-hover-blue: var(--pallete-brand-200);
+    --Blue-tag-border-blue: var(--pallete-brand-400);
     --Cyan-tag-background-cyan: var(--Default-Cyan-10);
     --Cyan-tag-color-cyan: var(--Default-Cyan-70);
     --Cyan-tag-hover-cyan: var(--Hover-Cyan-10);
@@ -329,271 +329,4 @@
     --Yellow-tag-hover-yellow: var(--Hover-Yellow-10);
     --Yellow-tag-border-yellow: var(--Default-Yellow-40);
   }
-}
-
-@layer components {
-  /* fixed styles */
-  /* utility */
-  .label-01 {
-    @apply text-sm leading-4 font-normal;
-  }
-  .label-bold-01 {
-    @apply text-sm leading-4 font-bold;
-  }
-  .label-02 {
-    @apply text-base leading-5 font-normal;
-  }
-  .label-bold-02 {
-    @apply text-base leading-5 font-bold;
-  }
-  /* body */
-  .body-compact-01 {
-    @apply text-base leading-5 font-normal;
-  }
-  .body-compact-02 {
-    @apply text-lg leading-6 font-normal;
-  }
-  .body-01 {
-    @apply text-base leading-6 font-normal;
-  }
-  .body-02 {
-    @apply text-lg leading-7 font-normal;
-  }
-  /* heading */
-  .heading-compact-01 {
-    @apply text-base leading-5 font-bold;
-  }
-  .heading-compact-02 {
-    @apply text-lg leading-6 font-bold;
-  }
-  .heading-01 {
-    @apply text-base leading-5 font-bold;
-  }
-  .heading-02 {
-    @apply text-lg leading-7 font-bold;
-  }
-  .heading-03 {
-    @apply text-xl leading-8 font-bold;
-  }
-  .heading-04 {
-    @apply text-2xl leading-8 font-bold;
-  }
-  .heading-05 {
-    @apply text-3xl leading-9 font-bold;
-  }
-  .heading-06 {
-    @apply text-4xl leading-normal font-bold;
-  }
-  .heading-07 {
-    @apply text-5xl leading-normal font-bold;
-  }
-  /* fluid styles */
-  /* fluid heading */
-  .fluid-heading-03 {
-    @apply text-xl leading-normal font-bold;
-    @apply md:text-2xl;
-  }
-  .fluid-heading-04 {
-    @apply text-2xl leading-normal font-bold;
-    @apply md:text-3xl;
-  }
-  .fluid-heading-05 {
-    @apply text-3xl leading-normal font-bold;
-    @apply md:text-4xl;
-  }
-  .fluid-heading-06 {
-    @apply text-4xl leading-normal font-bold;
-    @apply md:text-5xl;
-  }
-  /* fluid display */
-  .fluid-display-01 {
-    @apply text-5xl leading-normal font-bold;
-    @apply md:text-6xl;
-  }
-  .fluid-display-02 {
-    @apply text-5xl leading-normal font-bold;
-    @apply md:text-7xl;
-  }
-  .fluid-display-03 {
-    @apply text-5xl leading-normal font-bold;
-    @apply md:text-8xl;
-  }
-  .fluid-display-04 {
-    @apply text-5xl leading-normal font-bold;
-    @apply md:text-9xl;
-  }
-  /* fluid paragraph */
-  .fluid-paragraph-01 {
-    @apply text-lg leading-7 font-normal;
-    @apply md:text-xl leading-8;
-  }
-  .fluid-paragraph-02 {
-    @apply text-xl leading-8 font-bold;
-    @apply md:text-2xl leading-9;
-  }
-
-  //btn
-  .btn {
-    @apply inline-flex gap-2 whitespace-nowrap rounded text-center items-center text-base leading-4 font-medium align-middle cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-focus focus-visible:ring-offset-1 disabled:bg-[--bg-button-disabled] disabled:text-fg-on-color-disabled disabled:pointer-events-none transition-colors duration-150;
-  }
-  //btn styles
-  .btn-primary-brand {
-    @apply text-fg-on-color bg-[--button-primary-brand] hover:bg-[--button-primary-brand-hover] active:bg-[--button-primary-brand-active];
-  }
-  .btn-primary {
-    @apply text-fg-on-color bg-[--button-primary] hover:bg-[--button-primary-hover] active:bg-[--button-primary-active];
-  }
-  .btn-secondary {
-    @apply text-fg-primary bg-[--button-secondary] hover:bg-[--button-secondary-hover] active:bg-[--button-secondary-active];
-  }
-  .btn-tertiary {
-    @apply text-fg-primary border border-[--btn-tertiary] hover:bg-[--button-tertiary-hover] active:bg-background-active;
-  }
-  .btn-ghost {
-    @apply text-fg-primary hover:bg-background-hover active:bg-background-active;
-  }
-
-  //btn sizes
-  .btn-xl {
-    @apply px-6 py-4 text-xl;
-  }
-  .btn-lg {
-    @apply px-6 py-4;
-  }
-  .btn-sm {
-    @apply px-3 py-2;
-  }
-  .btn-xs {
-    @apply px-2 py-1 text-sm;
-  }
-  //icon button
-  // .icon-btn {
-  //   @apply inline-flex px-2 py-2 whitespace-nowrap rounded items-center align-middle cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-focus focus-visible:ring-offset-1 disabled:bg-[--bg-button-disabled] disabled:text-fg-on-color-disabled disabled:pointer-events-none transition-colors select-none duration-150;
-  // }
-  .icon-btn {
-    @apply aspect-square;
-  }
-  //icon button sizes
-  .icon-btn-xl {
-    @apply px-4 py-4;
-  }
-  .icon-btn-lg {
-    @apply px-4 py-4;
-  }
-  .icon-btn-sm {
-    @apply px-2 py-2;
-  }
-  .icon-btn-xs {
-    @apply px-1 py-1;
-  }
-}
-
-body {
-  @apply font-sans text-base;
-}
-
-// font-family
-@font-face {
-  font-family: dana;
-  font-style: normal;
-  font-weight: 10;
-  src:
-    url('/assets/fonts/Dana-Hairline.woff2') format('woff2'),
-    /* FF39+,Chrome36+, Opera24+*/ url('/assets/fonts/Dana-Hairline.woff') format('woff'); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-}
-@font-face {
-  font-family: dana;
-  font-style: normal;
-  font-weight: 100;
-  src:
-    url('/assets/fonts/Dana-Thin.woff2') format('woff2'),
-    /* FF39+,Chrome36+, Opera24+*/ url('/assets/fonts/Dana-Thin.woff') format('woff'); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-}
-@font-face {
-  font-family: dana;
-  font-style: normal;
-  font-weight: 200;
-  src:
-    url('/assets/fonts/Dana-UltraLight.woff2') format('woff2'),
-    /* FF39+,Chrome36+, Opera24+*/ url('/assets/fonts/Dana-UltraLight.woff') format('woff'); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-}
-@font-face {
-  font-family: dana;
-  font-style: normal;
-  font-weight: 300;
-  src:
-    url('/assets/fonts/Dana-Light.woff2') format('woff2'),
-    /* FF39+,Chrome36+, Opera24+*/ url('/assets/fonts/Dana-Light.woff') format('woff'); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-}
-@font-face {
-  font-family: dana;
-  font-style: normal;
-  font-weight: 500;
-  src:
-    url('/assets/fonts/Dana-Medium.woff2') format('woff2'),
-    /* FF39+,Chrome36+, Opera24+*/ url('/assets/fonts/Dana-Medium.woff') format('woff'); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-}
-@font-face {
-  font-family: dana;
-  font-style: normal;
-  font-weight: 600;
-  src:
-    url('/assets/fonts/Dana-DemiBold.woff2') format('woff2'),
-    /* FF39+,Chrome36+, Opera24+*/ url('/assets/fonts/Dana-DemiBold.woff') format('woff'); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-}
-@font-face {
-  font-family: dana;
-  font-style: normal;
-  font-weight: 800;
-  src:
-    url('/assets/fonts/Dana-ExtraBold.woff2') format('woff2'),
-    /* FF39+,Chrome36+, Opera24+*/ url('/assets/fonts/Dana-ExtraBold.woff') format('woff'); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-}
-@font-face {
-  font-family: dana;
-  font-style: normal;
-  font-weight: 900;
-  src:
-    url('/assets/fonts/Dana-Black.woff2') format('woff2'),
-    /* FF39+,Chrome36+, Opera24+*/ url('/assets/fonts/Dana-Black.woff') format('woff'); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-}
-@font-face {
-  font-family: dana;
-  font-style: normal;
-  font-weight: 930;
-  src:
-    url('/assets/fonts/Dana-ExtraBlack.woff2') format('woff2'),
-    /* FF39+,Chrome36+, Opera24+*/ url('/assets/fonts/Dana-ExtraBlack.woff') format('woff'); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-}
-@font-face {
-  font-family: dana;
-  font-style: normal;
-  font-weight: 960;
-  src:
-    url('/assets/fonts/Dana-Heavy.woff2') format('woff2'),
-    /* FF39+,Chrome36+, Opera24+*/ url('/assets/fonts/Dana-Heavy.woff') format('woff'); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-}
-@font-face {
-  font-family: dana;
-  font-style: normal;
-  font-weight: 990;
-  src:
-    url('/assets/fonts/Dana-Fat.woff2') format('woff2'),
-    /* FF39+,Chrome36+, Opera24+*/ url('/assets/fonts/Dana-Fat.woff') format('woff'); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-}
-@font-face {
-  font-family: dana;
-  font-style: normal;
-  font-weight: bold;
-  src:
-    url('/assets/fonts/Dana-Bold.woff2') format('woff2'),
-    /* FF39+,Chrome36+, Opera24+*/ url('/assets/fonts/Dana-Bold.woff') format('woff'); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-}
-@font-face {
-  font-family: dana;
-  font-style: normal;
-  font-weight: normal;
-  src:
-    url('/assets/fonts/Dana-Regular.woff2') format('woff2'),
-    /* FF39+,Chrome36+, Opera24+*/ url('/assets/fonts/Dana-Regular.woff') format('woff'); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
 }
