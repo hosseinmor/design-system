@@ -36,8 +36,8 @@
     //core tokens
     //background
     --background: var(--white);
-    --background-hover:
-      rgba(140, 140, 140), --background-active: rgba(140, 140, 140, 0.5); //neutral-500@50
+    --background-hover: rgba(140, 140, 140);
+    --background-active: rgba(140, 140, 140, 0.5); //neutral-500@50
     --background-selected: rgba(140, 140, 140, 0.2); //neutral-500@20
     --background-selected-hover: rgba(140, 140, 140, 0.32); //neutral-500@32
     --background-inverse: var(--neutral-900);
@@ -144,54 +144,58 @@
     --notification-action-tertiary-inverse-text: var(--Cool-neutral-100);
     --notification-action-tertiary-inverse-hover: var(--surface-primary-hover);
     // tag
-    --blue-tag-background-blue: var(--brand-100);
-    --blue-tag-color-blue: var(--brand-500);
-    --blue-tag-hover-blue: var(--brand-200);
-    --blue-tag-border-blue: var(--brand-400);
-    --Cyan-tag-background-cyan: var(--Cyan-10);
-    --Cyan-tag-color-cyan: var(--Cyan-70);
-    --Cyan-tag-hover-cyan: var(--Hover-Cyan-10);
-    --Cyan-tag-border-cyan: var(--Cyan-40);
-    --Green-tag-background-green: var(--Green-10);
-    --Green-tag-color-green: var(--Green-70);
-    --Green-tag-hover-green: var(--Hover-Green-10);
-    --Magenta-tag-background-magenta: var(--Magenta-10);
-    --Green-tag-border-green: var(--Green-40);
-    --Magenta-tag-color-magenta: var(--Magenta-70);
-    --Magenta-tag-hover-magenta: var(--Hover-Magenta-10);
-    --Purple-tag-background-purple: var(--Purple-10);
-    --Magenta-tag-border-magenta: var(--Magenta-40);
-    --Purple-tag-color-purple: var(--Purple-70);
-    --Purple-tag-hover-purple: var(--Hover-Purple-10);
-    --Red-tag-background-red: var(--Red-10);
-    --Purple-tag-border-purple: var(--Purple-40);
-    --Red-tag-color-red: var(--Red-70);
-    --Red-tag-hover-red: var(--Hover-Red-10);
-    --Red-tag-border-red: var(--Red-40);
-    --Teal-tag-background-teal: var(--Teal-10);
-    --Teal-tag-color-teal: var(--Teal-70);
-    --Teal-tag-hover-teal: var(--Hover-Teal-10);
-    --neutral-tag-background-neutral: var(--neutral-10);
-    --Teal-tag-border-teal: var(--Teal-40);
-    --neutral-tag-color-neutral: var(--neutral-70);
-    --neutral-tag-hover-neutral: var(--Hover-neutral-10);
-    --Cool-neutral-tag-background-cool-neutral: var(--Cool-neutral-10);
-    --neutral-tag-border-neutral: var(--neutral-40);
-    --Cool-neutral-tag-color-cool-neutral: var(--Cool-neutral-70);
-    --Cool-neutral-tag-hover-cool-neutral: var(--Hover-Cool-neutral-10);
-    --Cool-neutral-tag-border-cool-neutral: var(--Cool-neutral-40);
-    --Warm-neutral-tag-background-warm-neutral: var(--Warm-neutral-10);
-    --Warm-neutral-tag-color-warm-neutral: var(--Warm-neutral-70);
-    --Warm-neutral-tag-hover-warm-neutral: var(--Hover-Warm-neutral-10);
-    --Warm-neutral-tag-border-warm-neutral: var(--Warm-neutral-40);
-    --Orange-tag-background-orange: var(--Orange-10);
-    --Orange-tag-color-orange: var(--Orange-70);
-    --Orange-tag-hover-orange: var(--Hover-Orange-10);
-    --Orange-tag-border-orange: var(--Orange-40);
-    --Yellow-tag-background-yellow: var(--Yellow-10);
-    --Yellow-tag-color-yellow: var(--Yellow-70);
-    --Yellow-tag-hover-yellow: var(--Hover-Yellow-10);
-    --Yellow-tag-border-yellow: var(--Yellow-40);
+    --tag-bg-brand: var(--brand-200);
+    --tag-fg-brand: var(--brand-700);
+    --tag-hover-brand: var(--brand-300);
+    --tag-tag-border-brand: var(--brand-400);
+    --tag-bg-blue: var(--blue-200);
+    --tag-fg-blue: var(--blue-700);
+    --tag-hover-blue: var(--blue-300);
+    --tag-border-blue: var(--blue-400);
+    --tag-bg-cyan: var(--cyan-200);
+    --tag-fg-cyan: var(--cyan-700);
+    --tag-hover-cyan: var(--cyan-300);
+    --tag-border-cyan: var(--cyan-400);
+    --tag-bg-green: var(--green-200);
+    --tag-fg-green: var(--green-700);
+    --tag-hover-green: var(--green-300);
+    --tag-border-green: var(--green-400);
+    --tag-bg-magenta: var(--magenta-200);
+    --tag-fg-magenta: var(--magenta-700);
+    --tag-hover-magenta: var(--magenta-300);
+    --tag-border-magenta: var(--magenta-400);
+    --tag-bg-purple: var(--purple-200);
+    --tag-fg-purple: var(--purple-700);
+    --tag-hover-purple: var(--purple-300);
+    --tag-border-purple: var(--purple-400);
+    --tag-bg-red: var(--red-200);
+    --tag-fg-red: var(--red-700);
+    --tag-hover-red: var(--red-300);
+    --tag-border-red: var(--red-400);
+    --tag-bg-teal: var(--teal-200);
+    --tag-fg-teal: var(--teal-700);
+    --tag-hover-teal: var(--teal-300);
+    --tag-tag-border-teal: var(--teal-400);
+    --tag-bg-gray: var(--gray-200);
+    --tag-fg-gray: var(--gray-700);
+    --tag-hover-gray: var(--gray-300);
+    --tag-border-gray: var(--gray-400);
+    --tag-bg-cool-gray: var(--cool-gray-200);
+    --tag-fg-cool-gray: var(--cool-gray-700);
+    --tag-hover-cool-gray: var(--cool-gray-300);
+    --tag-border-cool-gray: var(--cool-gray-400);
+    --tag-bg-warm-gray: var(--warm-gray-200);
+    --tag-fg-warm-gray: var(--warm-gray-800);
+    --tag-hover-warm-gray: var(--warm-gray-300);
+    --tag-border-warm-gray: var(--warm-gray-400);
+    --tag-bg-orange: var(--orange-200);
+    --tag-fg-orange: var(--orange-700);
+    --tag-hover-orange: var(--orange-300);
+    --tag-tag-border-orange: var(--orange-400);
+    --tag-bg-yellow: var(--yellow-50);
+    --tag-fg-yellow: var(--yellow-600);
+    --tag-hover-yellow: var(--yellow-100);
+    --tag-border-yellow: var(--yellow-300);
   }
 }
 
