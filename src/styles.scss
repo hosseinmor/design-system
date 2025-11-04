@@ -246,9 +246,9 @@
 
     // component token
     // button
-    --button-primary-brand: var(--brand-500);
-    --button-primary-brand-hover: var(--brand-600);
-    --button-primary-brand-active: var(--brand-700);
+    --button-brand: var(--brand-500);
+    --button-brand-hover: var(--brand-600);
+    --button-brand-active: var(--brand-700);
     --button-primary: var(--neutral-900);
     --button-primary-hover: var(--neutral-800);
     --button-primary-active: var(--neutral-600);
@@ -259,22 +259,13 @@
     --button-tertiary-hover: var(--neutral-200);
     --button-tertiary-active: var(--neutral-400);
     --button-danger-primary: var(--red-600);
-    --button-danger-secondary: var(--red-600); 
+    --button-danger-secondary: var(--red-600);
     --button-danger-hover: var(--red-700);
     --button-danger-active: var(--red-800);
     --button-accent: var(--green-500);
     --button-accent-hover: var(--green-600);
     --button-accent-active: var(--green-700);
     --button-disabled: var(--neutral-400);
-    // notification test ehsan
-    --notification-info-background: var(--blue-50);
-    --notification-info-border: #0043ce4d;
-    --notification-success-background: var(--green-50);
-    --notification-success-border: #24a1484d;
-    --notification-error-background: var(--red-50);
-    --notification-error-border: #da1e284d;
-    --notification-warning-background: var(--yellow-50);
-    --notification-warning-border: #f1c21b4d;
 
     // tag
     --tag-bg-brand: var(--brand-200);
@@ -435,11 +426,11 @@
 
   //btn
   .tw-btn {
-    @apply tw-px-4 tw-py-3 tw-inline-flex tw-gap-2 tw-whitespace-nowrap tw-rounded tw-text-center tw-items-center tw-text-base tw-leading-4 tw-font-medium tw-align-middle tw-cursor-pointer focus-visible:tw-outline-none focus-visible:tw-ring-2 focus-visible:tw-ring-focus focus-visible:tw-ring-offset-1 disabled:tw-bg-[--button-disabled] disabled:tw-text-fg-on-color-disabled disabled:tw-pointer-events-none tw-transition-colors tw-duration-150;
+    @apply tw-px-4 tw-h-10 tw-inline-flex tw-gap-2 tw-whitespace-nowrap tw-rounded-full tw-text-center tw-justify-center tw-items-center tw-text-base tw-leading-loose tw-font-medium tw-align-middle tw-cursor-pointer focus-visible:tw-outline-none focus-visible:tw-ring-2 focus-visible:tw-ring-focus focus-visible:tw-ring-offset-1 disabled:tw-bg-[--button-disabled] disabled:tw-text-fg-on-color-disabled disabled:tw-pointer-events-none tw-transition-colors tw-duration-150;
   }
   //btn styles
-  .tw-btn-primary-brand {
-    @apply tw-text-fg-on-color tw-bg-[--button-primary-brand] hover:tw-bg-[--button-primary-brand-hover] active:tw-bg-[--button-primary-brand-active];
+  .tw-btn-brand {
+    @apply tw-text-fg-on-color tw-bg-[--button-brand] hover:tw-bg-[--button-brand-hover] active:tw-bg-[--button-brand-active];
   }
   .tw-btn-primary {
     @apply tw-text-fg-on-color tw-bg-[--button-primary] hover:tw-bg-[--button-primary-hover] active:tw-bg-[--button-primary-active];
@@ -453,39 +444,25 @@
   .tw-btn-ghost {
     @apply tw-text-fg-primary hover:tw-bg-background-hover active:tw-bg-background-active;
   }
+  .tw.btn-link {
+    @apply tw-px-0 tw-py-0 tw-text-link-primary hover:tw-text-link-primary-hover;
+  }
 
   //btn sizes
   .tw-btn-xl {
-    @apply tw-px-6 tw-py-4 tw-text-xl;
+    @apply tw-px-6 tw-h-12 tw-text-xl;
   }
   .tw-btn-lg {
-    @apply tw-px-6 tw-py-4;
+    @apply tw-px-6 tw-py-0 tw-h-12;
   }
   .tw-btn-sm {
-    @apply tw-px-3 tw-py-2;
+    @apply tw-px-4 tw-h-8;
   }
   .tw-btn-xs {
-    @apply tw-px-2 tw-py-1 tw-text-sm;
+    @apply tw-px-2 tw-h-6 tw-text-sm tw-leading-loose;
   }
-  //icon button
-  // .icon-btn {
-  //   @apply inline-flex px-2 py-2 whitespace-nowrap rounded items-center align-middle cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-focus focus-visible:ring-offset-1 disabled:bg-[--bg-button-disabled] disabled:text-fg-on-color-disabled disabled:pointer-events-none transition-colors select-none duration-150;
-  // }
-  .tw-icon-btn {
-    @apply tw-aspect-square;
-  }
-  //icon button sizes
-  .tw-icon-btn-lg {
-    @apply tw-px-4 tw-py-4;
-  }
-  .tw-icon-btn-sm {
-    @apply tw-px-2 tw-py-2;
-  }
-  .tw-icon-btn-xs {
-    @apply tw-px-1 tw-py-1;
+
+  .tw-btn-icon {
+    @apply tw-p-0 tw-aspect-square;
   }
 }
-
-// body {
-//   @apply font-sans text-base;
-// }
