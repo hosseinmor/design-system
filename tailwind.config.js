@@ -1,9 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 import colors from 'tailwindcss/colors';
 
-
 module.exports = {
   content: ['./src/**/*.{html,ts,scss}'],
+  prefix: 'tw-',
   theme: {
     fontSize: {
       xs: ['0.625rem'] /* 10px */,
@@ -20,6 +20,7 @@ module.exports = {
       '8xl': ['4.5rem'] /* 72px */,
       '9xl': ['6rem'] /* 96px */,
     },
+
     extend: {
       fontFamily: {
         sans: ['Dana', 'ui-sans-serif', 'system-ui', 'sans-serif'],
