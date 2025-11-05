@@ -213,7 +213,7 @@
     --fg-on-color: var(--white);
     --fg-on-color-disabled: var(--neutral-500);
     --fg-helper: var(--neutral-500);
-    --fg-error: var(--Red-60);
+    --fg-error: var(--Red-600);
     --fg-inverse: var(--white);
     --fg-disabled: var(--neutral-400);
     //link
@@ -223,7 +223,7 @@
     --link-secondary-hover: var(--neutral-950);
     --link-inverse: var(--brand-400);
     --link-inverse-hover: var(--brand-300);
-    --link-visited: var(--Purple-60);
+    --link-visited: var(--Purple-600);
     // support
     --support-error: var(--red-500);
     --support-success: var(--green-500);
@@ -235,7 +235,7 @@
     --support-info-inverse: var(--brand-400);
     // miscellaneous
     --focus: var(--brand-500);
-    --support-caution-undefined: var(--Purple-60);
+    --support-caution-undefined: var(--Purple-600);
     --focus-inset: var(--white);
     --focus-inverse: var(--white);
     --interactive: var(--brand-500);
@@ -255,7 +255,7 @@
     --button-secondary: var(--neutral-100);
     --button-secondary-hover: var(--neutral-200);
     --button-secondary-active: var(--neutral-400);
-    --button-tertiary: var(--warm-neutral-900);
+    --button-tertiary: var(--neutral-900);
     --button-tertiary-hover: var(--neutral-200);
     --button-tertiary-active: var(--neutral-400);
     --button-danger-primary: var(--red-600);
@@ -315,7 +315,7 @@
     --tag-bg-orange: var(--orange-200);
     --tag-fg-orange: var(--orange-700);
     --tag-hover-orange: var(--orange-300);
-    --tag-tag-border-orange: var(--orange-400);
+    --tag-border-orange: var(--orange-400);
     --tag-bg-yellow: var(--yellow-200);
     --tag-fg-yellow: var(--yellow-700);
     --tag-hover-yellow: var(--yellow-300);
