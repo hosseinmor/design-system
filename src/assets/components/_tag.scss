@@ -1,63 +1,38 @@
-// @layer base {
-//   root: {
-//     // tag
-//     --tag-bg-brand: var(--brand-200);
-//     --tag-fg-brand: var(--brand-700);
-//     --tag-hover-brand: var(--brand-300);
-//     --tag-border-brand: var(--brand-400);
-//     --tag-bg-blue: var(--blue-200);
-//     --tag-fg-blue: var(--blue-700);
-//     --tag-hover-blue: var(--blue-300);
-//     --tag-border-blue: var(--blue-400);
-//     --tag-bg-cyan: var(--cyan-200);
-//     --tag-fg-cyan: var(--cyan-700);
-//     --tag-hover-cyan: var(--cyan-300);
-//     --tag-border-cyan: var(--cyan-400);
-//     --tag-bg-green: var(--green-200);
-//     --tag-fg-green: var(--green-700);
-//     --tag-hover-green: var(--green-300);
-//     --tag-border-green: var(--green-400);
-//     --tag-bg-magenta: var(--magenta-200);
-//     --tag-fg-magenta: var(--magenta-700);
-//     --tag-hover-magenta: var(--magenta-300);
-//     --tag-border-magenta: var(--magenta-400);
-//     --tag-bg-purple: var(--purple-200);
-//     --tag-fg-purple: var(--purple-700);
-//     --tag-hover-purple: var(--purple-300);
-//     --tag-border-purple: var(--purple-400);
-//     --tag-bg-red: var(--red-200);
-//     --tag-fg-red: var(--red-700);
-//     --tag-hover-red: var(--red-300);
-//     --tag-border-red: var(--red-400);
-//     --tag-bg-teal: var(--teal-200);
-//     --tag-fg-teal: var(--teal-700);
-//     --tag-hover-teal: var(--teal-300);
-//     --tag-border-teal: var(--teal-400);
-//     --tag-bg-gray: var(--neutral-200);
-//     --tag-fg-gray: var(--neutral-700);
-//     --tag-hover-gray: var(--neutral-300);
-//     --tag-border-gray: var(--neutral-400);
-//     --tag-bg-cool-gray: var(--cool-gray-200);
-//     --tag-fg-cool-gray: var(--cool-gray-700);
-//     --tag-hover-cool-gray: var(--cool-gray-300);
-//     --tag-border-cool-gray: var(--cool-gray-400);
-//     --tag-bg-warm-gray: var(--warm-gray-200);
-//     --tag-fg-warm-gray: var(--warm-gray-800);
-//     --tag-hover-warm-gray: var(--warm-gray-300);
-//     --tag-border-warm-gray: var(--warm-gray-400);
-//     --tag-bg-orange: var(--orange-200);
-//     --tag-fg-orange: var(--orange-700);
-//     --tag-hover-orange: var(--orange-300);
-//     --tag-tag-border-orange: var(--orange-400);
-//     --tag-bg-yellow: var(--yellow-200);
-//     --tag-fg-yellow: var(--yellow-700);
-//     --tag-hover-yellow: var(--yellow-300);
-//     --tag-border-yellow: var(--yellow-400);
-//   }
-// }
+/* src/assets/components/_tag.scss */
 
 @layer components {
-  .tag {
+  .tw-tag {
     @apply tw-inline-block tw-px-2 tw-py-1 tw-rounded-full tw-text-sm;
+  }
+  .tw-tag-brand {
+    @apply tw-bg-[var(--tag-bg-brand)] tw-text-[var(--tag-fg-brand)] tw-border tw-border-[var(--tag-border-brand)] hover:tw-bg-[var(--tag-hover-brand)];
+  }
+
+  .tw-tag-cyan {
+    @apply tw-bg-[var(--tag-bg-cyan)] tw-text-[var(--tag-fg-cyan)] tw-border tw-border-[var(--tag-border-cyan)] hover:tw-bg-[var(--tag-hover-cyan)];
+  }
+
+  .tw-tag-green {
+    @apply tw-bg-[var(--tag-bg-green)] tw-text-[var(--tag-fg-green)] tw-border tw-border-[var(--tag-border-green)] hover:tw-bg-[var(--tag-hover-green)];
+  }
+
+  .tw-tag-purple {
+    @apply tw-bg-[var(--tag-bg-purple)] tw-text-[var(--tag-fg-purple)] tw-border tw-border-[var(--tag-border-purple)] hover:tw-bg-[var(--tag-hover-purple)];
+  }
+
+  .tw-tag-red {
+    @apply tw-bg-[var(--tag-bg-red)] tw-text-[var(--tag-fg-red)] tw-border tw-border-[var(--tag-border-red)] hover:tw-bg-[var(--tag-hover-red)];
+  }
+
+  .tw-tag-teal {
+    @apply tw-bg-[var(--tag-bg-teal)] tw-text-[var(--tag-fg-teal)] tw-border tw-border-[var(--tag-border-teal)] hover:tw-bg-[var(--tag-hover-teal)];
+  }
+
+  .tw-tag-gray {
+    @apply tw-bg-[var(--tag-bg-gray)] tw-text-[var(--tag-fg-gray)] tw-border tw-border-[var(--tag-border-gray)] hover:tw-bg-[var(--tag-hover-gray)];
+  }
+
+  .tw-tag-yellow {
+    @apply tw-bg-[var(--tag-bg-yellow)] tw-text-[var(--tag-fg-yellow)] tw-border tw-border-[var(--tag-border-yellow)] hover:tw-bg-[var(--tag-hover-yellow)];
   }
 }
