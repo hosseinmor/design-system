@@ -6,7 +6,7 @@
     @apply tw-inline-block tw-text-sm tw-font-medium tw-px-2 tw-py-1 tw-rounded-full;
   }
   .tw-tag-brand {
-    @apply tw-bg-background tw-text-[var(--tag-fg-brand)] tw-border tw-border-[var(--tag-border-brand)] hover:tw-bg-[var(--tag-hover-brand)];
+    @apply tw-bg-[var(--tag-bg-brand)] tw-text-[var(--tag-fg-brand)] tw-border tw-border-[var(--tag-border-brand)] hover:tw-bg-[var(--tag-hover-brand)];
   }
 
   .tw-tag-cyan {

@@ -4,261 +4,8 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-@layer base {
-  :root {
-    --white: #fff;
-    --black: #000;
-    // brand
-    --brand-50: #eef3ff;
-    --brand-100: #e0e8ff;
-    --brand-200: #c6d4ff;
-    --brand-300: #a4b7fd;
-    --brand-400: #7f90fa;
-    --brand-500: #5660f2;
-    --brand-600: #4644e7;
-    --brand-700: #3b36cc;
-    --brand-800: #312ea5;
-    --brand-900: #2d2e82;
-    --brand-950: #1b1a4c;
-
-    // neutral
-    --neutral-50: #f7f7f7;
-    --neutral-100: #f2f2f2;
-    --neutral-200: #ebebeb;
-    --neutral-300: #dddddd;
-    --neutral-400: #c1c1c1;
-    --neutral-500: #8c8c8c;
-    --neutral-600: #6c6c6c;
-    --neutral-700: #515151;
-    --neutral-800: #3f3f3f;
-    --neutral-900: #222222;
-    --neutral-950: #0a0a0a;
-    //blue
-    --blue-50: #eff6ff;
-    --blue-100: #dbeafe;
-    --blue-200: #bfdbfe;
-    --blue-300: #93c5fd;
-    --blue-400: #60a5fa;
-    --blue-500: #3b82f6;
-    --blue-600: #2563eb;
-    --blue-700: #1d4ed8;
-    --blue-800: #1e40af;
-    --blue-900: #1e3a8a;
-    --blue-950: #172554;
-    //cyan
-    --cyan-50: #f0f9ff;
-    --cyan-100: #e5f6ff;
-    --cyan-200: #bae6ff;
-    --cyan-300: #82cfff;
-    --cyan-400: #33b1ff;
-    --cyan-500: #1192e8;
-    --cyan-600: #0072c3;
-    --cyan-700: #00539a;
-    --cyan-800: #003a6d;
-    --cyan-900: #012749;
-    --cyan-950: #061727;
-    //green
-    --green-50: #f0fdf4;
-    --green-100: #dcfce7;
-    --green-200: #bbf7d0;
-    --green-300: #86efac;
-    --green-400: #4ade80;
-    --green-500: #22c55e;
-    --green-600: #16a34a;
-    --green-700: #15803d;
-    --green-800: #166534;
-    --green-900: #14532d;
-    --green-950: #052e16;
-    //purple
-    --purple-50: #f5f3ff;
-    --purple-100: #ede9fe;
-    --purple-200: #ddd6fe;
-    --purple-300: #c4b5fd;
-    --purple-400: #a78bfa;
-    --purple-500: #8b5cf6;
-    --purple-600: #7c3aed;
-    --purple-700: #6d28d9;
-    --purple-800: #5b21b6;
-    --purple-900: #4c1d95;
-    --purple-950: #2e1065;
-    //red
-    --red-50: #fff1f2;
-    --red-100: #ffe4e6;
-    --red-200: #fecdd3;
-    --red-300: #fda4af;
-    --red-400: #fb7185;
-    --red-500: #f43f5e;
-    --red-600: #e11d48;
-    --red-700: #be123c;
-    --red-800: #9f1239;
-    --red-900: #881337;
-    --red-950: #4c0519;
-    //teal
-    --teal-50: #f0fdfa;
-    --teal-100: #d9fbfb;
-    --teal-200: #9ef0f0;
-    --teal-300: #3ddbd9;
-    --teal-400: #08bdba;
-    --teal-500: #009d9a;
-    --teal-600: #007d79;
-    --teal-700: #005d5d;
-    --teal-800: #004144;
-    --teal-900: #022b30;
-    --teal-950: #081a1c;
-    //yellow
-    --yellow-50: #fffbeb;
-    --yellow-100: #fef3c7;
-    --yellow-200: #fde68a;
-    --yellow-300: #fcd34d;
-    --yellow-400: #fbbf24;
-    --yellow-500: #f59e0b;
-    --yellow-600: #d97706;
-    --yellow-700: #b45309;
-    --yellow-800: #92400e;
-    --yellow-900: #78350f;
-    --yellow-950: #451a03;
-
-    //core tokens
-    //background
-    --background: var(--white);
-    --background-hover: rgba(140, 140, 140, 0.12); //neutral-500@12
-    --background-active: rgba(140, 140, 140, 0.5); //neutral-500@50
-    --background-selected: rgba(140, 140, 140, 0.2); //neutral-500@20
-    --background-selected-hover: rgba(140, 140, 140, 0.32); //neutral-500@32
-    --background-inverse: var(--neutral-800);
-    --background-inverse-hover: var(--neutral-700);
-    --background-brand: var(--brand-500);
-    //surface
-    --surface-01: var(--neutral-50);
-    --surface-01-hover: var(--neutral-100);
-    --surface-01-active: var(--neutral-400);
-    --surface-01-selected: var(--neutral-200);
-    --surface-01-selected-hover: var(--neutral-300);
-    --surface-02: var(--white);
-    --surface-02-hover: var(--neutral-100);
-    --surface-02-active: var(--neutral-400);
-    --surface-02-selected: var(--neutral-200);
-    --surface-02-selected-hover: var(--neutral-300);
-    --surface-selected-inverse: var(--neutral-900);
-    --surface-selected-disabled: var(--neutral-500);
-    --surface-emphasis: var(--brand-100);
-    --surface-magic: var(--purple-100);
-    --surface-success: var(--green-100);
-    --surface-error: var(--red-100);
-    --surface-info: var(--blue-100);
-    --surface-warning: var(--yellow-100);
-    //field
-    --field: var(--neutral-100);
-    --field-hover: var(--neutral-200);
-    //border
-    --stroke-subtle: var(--neutral-300);
-    --stroke-strong: var(--neutral-500);
-    --stroke-tile: var(--neutral-400);
-    --stroke-inverse: var(--neutral-900);
-    --stroke-disabled: var(--neutral-300);
-    --stroke-interactive: var(--brand-500);
-    //foreground
-    --fg-primary: var(--neutral-900);
-    --fg-secondary: var(--neutral-600);
-    --fg-placeholder: var(--neutral-400);
-    --fg-on-color: var(--white);
-    --fg-on-color-disabled: var(--neutral-500);
-    --fg-tertiary: var(--neutral-500);
-    --fg-inverse: var(--white);
-    --fg-disabled: var(--neutral-400);
-    --fg-error: var(--red-500);
-    --fg-success: var(--green-500);
-    --fg-warning: var(--yellow-500);
-    --fg-info: var(--blue-500);
-    --fg-error-inverse: var(--red-400);
-    --fg-success-inverse: var(--green-400);
-    --fg-warning-inverse: var(--yellow-400);
-    --fg-info-inverse: var(--brand-400);
-
-    //link
-    --link-primary: var(--brand-500);
-    --link-primary-hover: var(--brand-700);
-    --link-secondary: var(--neutral-900);
-    --link-inverse: var(--brand-400);
-    --link-inverse-hover: var(--brand-300);
-    --link-visited: var(--purple-600);
-    // support
-    // miscellaneous
-    --focus: var(--brand-500);
-    --focus-inverse: var(--white);
-    --interactive: var(--brand-500);
-    --highlight: var(--brand-200);
-    --overlay: rgba(10, 10, 10, 0.5); //neutral-950@50
-    --skeleton-element: var(--neutral-300);
-    --skeleton-background: var(--neutral-100);
-
-    // component token
-    // button
-    --button-brand: var(--brand-500);
-    --button-brand-hover: var(--brand-600);
-    --button-brand-active: var(--brand-800);
-    --button-primary: var(--neutral-900);
-    --button-primary-hover: var(--neutral-800);
-    --button-primary-active: var(--neutral-600);
-    --button-secondary: var(--neutral-100);
-    --button-secondary-hover: var(--neutral-200);
-    --button-secondary-active: var(--neutral-400);
-    --button-tertiary: var(--neutral-900);
-    --button-tertiary-hover: var(--neutral-200);
-    --button-tertiary-active: var(--neutral-400);
-    --button-danger-primary: var(--red-600);
-    --button-danger-secondary: var(--red-600);
-    --button-danger-hover: var(--red-700);
-    --button-danger-active: var(--red-800);
-    --button-accent: var(--green-500);
-    --button-accent-hover: var(--green-600);
-    --button-accent-active: var(--green-700);
-    --button-disabled: var(--neutral-400);
-
-    // tag
-    --tag-bg-brand: var(--brand-200);
-    --tag-fg-brand: var(--brand-700);
-    --tag-hover-brand: var(--brand-300);
-    --tag-border-brand: var(--brand-400);
-
-    --tag-bg-cyan: var(--cyan-200);
-    --tag-fg-cyan: var(--cyan-700);
-    --tag-hover-cyan: var(--cyan-300);
-    --tag-border-cyan: var(--cyan-400);
-
-    --tag-bg-green: var(--green-200);
-    --tag-fg-green: var(--green-700);
-    --tag-hover-green: var(--green-300);
-    --tag-border-green: var(--green-400);
-
-    --tag-bg-purple: var(--purple-200);
-    --tag-fg-purple: var(--purple-700);
-    --tag-hover-purple: var(--purple-300);
-    --tag-border-purple: var(--purple-400);
-
-    --tag-bg-red: var(--red-200);
-    --tag-fg-red: var(--red-700);
-    --tag-hover-red: var(--red-300);
-    --tag-border-red: var(--red-400);
-
-    --tag-bg-teal: var(--teal-200);
-    --tag-fg-teal: var(--teal-700);
-    --tag-hover-teal: var(--teal-300);
-    --tag-border-teal: var(--teal-400);
-
-    --tag-bg-gray: var(--neutral-200);
-    --tag-fg-gray: var(--neutral-700);
-    --tag-hover-gray: var(--neutral-300);
-    --tag-border-gray: var(--neutral-400);
-
-    --tag-bg-yellow: var(--yellow-200);
-    --tag-fg-yellow: var(--yellow-700);
-    --tag-hover-yellow: var(--yellow-300);
-    --tag-border-yellow: var(--yellow-400);
-  }
-}
+@import './assets/themes/light';
+// @import './assets/themes/dark';
 
 @layer components {
   /* fixed styles */
@@ -311,37 +58,37 @@
     @apply tw-text-3xl tw-leading-9 tw-font-bold;
   }
   .heading-06 {
-    @apply tw-text-4xl tw-leading-normal tw-font-bold;
+    @apply tw-text-4xl tw-font-bold;
   }
   .heading-07 {
-    @apply tw-text-5xl tw-leading-normal tw-font-bold;
+    @apply tw-text-5xl tw-font-bold;
   }
   /* fluid styles */
   /* fluid heading */
   .fluid-heading-03 {
-    @apply tw-text-xl tw-leading-normal tw-font-bold md:tw-text-2xl;
+    @apply tw-text-xl tw-font-bold md:tw-text-2xl;
   }
   .fluid-heading-04 {
-    @apply tw-text-2xl tw-leading-normal tw-font-bold md:tw-text-3xl;
+    @apply tw-text-2xl tw-font-bold md:tw-text-3xl;
   }
   .fluid-heading-05 {
-    @apply tw-text-3xl tw-leading-normal tw-font-bold md:tw-text-4xl;
+    @apply tw-text-3xl tw-font-bold md:tw-text-4xl;
   }
   .fluid-heading-06 {
-    @apply tw-text-4xl tw-leading-normal tw-font-bold md:tw-text-5xl;
+    @apply tw-text-4xl tw-font-bold md:tw-text-5xl;
   }
   /* fluid display */
   .fluid-display-01 {
-    @apply tw-text-5xl tw-leading-normal tw-font-bold md:tw-text-6xl;
+    @apply tw-text-5xl tw-font-bold md:tw-text-6xl;
   }
   .fluid-display-02 {
-    @apply tw-text-5xl tw-leading-normal tw-font-bold md:tw-text-7xl;
+    @apply tw-text-5xl tw-font-bold md:tw-text-7xl;
   }
   .fluid-display-03 {
-    @apply tw-text-5xl tw-leading-normal tw-font-bold md:tw-text-8xl;
+    @apply tw-text-5xl tw-font-bold md:tw-text-8xl;
   }
   .fluid-display-04 {
-    @apply tw-text-5xl tw-leading-normal tw-font-bold md:tw-text-9xl;
+    @apply tw-text-5xl tw-font-bold md:tw-text-9xl;
   }
   /* fluid paragraph */
   .fluid-paragraph-01 {
@@ -353,20 +100,20 @@
 
   //btn
   .tw-btn {
-    @apply tw-px-4 tw-h-10 tw-inline-flex tw-gap-2 tw-whitespace-nowrap tw-rounded-full tw-text-center tw-justify-center tw-items-center tw-text-base tw-leading-loose tw-font-medium tw-align-middle tw-cursor-pointer focus-visible:tw-outline-none focus-visible:tw-ring-2 focus-visible:tw-ring-focus focus-visible:tw-ring-offset-1 disabled:tw-bg-[var(--button-disabled)] disabled:tw-text-fg-on-color-disabled disabled:tw-pointer-events-none tw-transition-colors tw-duration-150;
+    @apply tw-px-4 tw-h-10 tw-inline-flex tw-gap-2 tw-whitespace-nowrap tw-rounded-md tw-text-center tw-justify-center tw-items-center tw-text-base tw-leading-loose tw-font-medium tw-align-middle tw-cursor-pointer focus-visible:tw-outline-none focus-visible:tw-ring-2 focus-visible:tw-ring-focus focus-visible:tw-ring-offset-1 disabled:tw-bg-[var(--btn-disabled)] disabled:tw-text-fg-on-color-disabled disabled:tw-pointer-events-none tw-transition-colors tw-duration-150;
   }
   //btn styles
   .tw-btn-brand {
-    @apply tw-text-fg-on-color tw-bg-[var(--button-brand)] hover:tw-bg-[var(--button-brand-hover)] active:tw-bg-[var(--button-brand-active)];
+    @apply tw-text-fg-on-color tw-bg-[var(--btn-brand)] hover:tw-bg-[var(--btn-brand-hover)] active:tw-bg-[var(--btn-brand-active)];
   }
   .tw-btn-primary {
-    @apply tw-text-fg-on-color tw-bg-[var(--button-primary)] hover:tw-bg-[var(--button-primary-hover)] active:tw-bg-[var(--button-primary-active)];
+    @apply tw-text-fg-on-color tw-bg-[var(--btn-primary)] hover:tw-bg-[var(--btn-primary-hover)] active:tw-bg-[var(--btn-primary-active)];
   }
   .tw-btn-secondary {
-    @apply tw-text-fg-primary tw-bg-[var(--button-secondary)] hover:tw-bg-[var(--button-secondary-hover)] active:tw-bg-[var(--button-secondary-active)];
+    @apply tw-text-fg-primary tw-bg-[var(--btn-secondary)] hover:tw-bg-[var(--btn-secondary-hover)] active:tw-bg-[var(--btn-secondary-active)];
   }
   .tw-btn-tertiary {
-    @apply tw-text-fg-primary tw-border tw-border-[var(--btn-tertiary)] hover:tw-bg-[var(--button-tertiary-hover)] active:tw-bg-background-active;
+    @apply tw-text-fg-primary tw-border tw-border-[var(--btn-tertiary)] hover:tw-bg-[var(--btn-tertiary-hover)] active:tw-bg-background-active;
   }
   .tw-btn-ghost {
     @apply tw-text-fg-primary hover:tw-bg-background-hover active:tw-bg-background-active;
@@ -375,7 +122,7 @@
     @apply tw-inline-flex tw-items-center tw-text-base tw-font-medium tw-gap-2 tw-text-link-primary hover:tw-text-link-primary-hover hover:tw-underline disabled:tw-text-fg-disabled disabled:tw-pointer-events-none visited:tw-text-link-visited;
   }
   .tw-link-secondary {
-    @apply tw-text-link-secondary hover:tw-text-link-secondary-hover;
+    @apply tw-text-link-secondary hover:tw-text-link-primary-hover;
   }
 
   //btn sizes

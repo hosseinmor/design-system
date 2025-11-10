@@ -23,6 +23,38 @@ module.exports = {
 
     extend: {
       colors: {
+        brand: {
+          50: '#eef3ff',
+          100: '#e0e8ff',
+          200: '#c6d4ff',
+          300: '#a4b7fd',
+          400: '#7f90fa',
+          500: '#5660f2',
+          600: '#4644e7',
+          700: '#3b36cc',
+          800: '#312ea5',
+          900: '#2d2e82',
+          950: '#1b1a4c',
+        },
+        // Neutral
+        neutral: {
+          50: '#f7f7f7',
+          100: '#f2f2f2',
+          200: '#ebebeb',
+          300: '#dddddd',
+          400: '#c1c1c1',
+          500: '#8c8c8c',
+          600: '#6c6c6c',
+          700: '#515151',
+          800: '#3f3f3f',
+          900: '#222222',
+          950: '#0a0a0a',
+        },
+
+        // رنگ‌های ثابت
+        white: '#fff',
+        black: '#000',
+
         // transparent: 'transparent',
         // current: 'currentColor',
         // white: 'var(--white)',
