@@ -55,11 +55,6 @@ module.exports = {
         white: '#fff',
         black: '#000',
 
-        // transparent: 'transparent',
-        // current: 'currentColor',
-        // white: 'var(--white)',
-        // black: 'var(--black)',
-
         background: 'var(--background)',
         'background-hover': 'var(--background-hover)',
         'background-active': 'var(--background-active)',
