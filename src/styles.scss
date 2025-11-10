@@ -4,8 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import 'assets/components/tag';
-@import 'assets/fonts';
+
 
 @layer base {
   :root {
@@ -121,7 +120,6 @@
     --yellow-900: #78350f;
     --yellow-950: #451a03;
 
-    //theme Default
     //core tokens
     //background
     --background: var(--white);
@@ -129,66 +127,66 @@
     --background-active: rgba(140, 140, 140, 0.5); //neutral-500@50
     --background-selected: rgba(140, 140, 140, 0.2); //neutral-500@20
     --background-selected-hover: rgba(140, 140, 140, 0.32); //neutral-500@32
-    --background-inverse: var(--neutral-900);
-    --background-inverse-hover: var(--neutral-800);
+    --background-inverse: var(--neutral-800);
+    --background-inverse-hover: var(--neutral-700);
     --background-brand: var(--brand-500);
     //surface
-    --surface-primary: var(--neutral-50);
-    --surface-primary-hover: var(--neutral-100);
-    --surface-primary-active: var(--neutral-400);
-    --surface-primary-selected: var(--neutral-200);
-    --surface-primary-selected-hover: var(--neutral-300);
-    --surface-secondary: var(--white);
-    --surface-secondary-hover: var(--neutral-100);
-    --surface-secondary-active: var(--neutral-400);
-    --surface-secondary-selected: var(--neutral-200);
-    --surface-secondary-selected-hover: var(--neutral-300);
+    --surface-01: var(--neutral-50);
+    --surface-01-hover: var(--neutral-100);
+    --surface-01-active: var(--neutral-400);
+    --surface-01-selected: var(--neutral-200);
+    --surface-01-selected-hover: var(--neutral-300);
+    --surface-02: var(--white);
+    --surface-02-hover: var(--neutral-100);
+    --surface-02-active: var(--neutral-400);
+    --surface-02-selected: var(--neutral-200);
+    --surface-02-selected-hover: var(--neutral-300);
     --surface-selected-inverse: var(--neutral-900);
     --surface-selected-disabled: var(--neutral-500);
-    --surface-accent-primary: var(--brand-100);
-    --surface-accent-secondary: var(--purple-100);
-    --surface-accent-tertiary: var(--teal-200);
+    --surface-emphasis: var(--brand-100);
+    --surface-magic: var(--purple-100);
+    --surface-success: var(--green-100);
+    --surface-error: var(--red-100);
+    --surface-info: var(--blue-100);
+    --surface-warning: var(--yellow-100);
     //field
     --field: var(--neutral-100);
     --field-hover: var(--neutral-200);
     //border
-    --border-subtle: var(--neutral-300);
-    --border-strong: var(--neutral-500);
-    --border-tile: var(--neutral-400);
-    --border-inverse: var(--neutral-900);
-    --border-disabled: var(--neutral-300);
-    --border-interactive: var(--brand-500);
+    --stroke-subtle: var(--neutral-300);
+    --stroke-strong: var(--neutral-500);
+    --stroke-tile: var(--neutral-400);
+    --stroke-inverse: var(--neutral-900);
+    --stroke-disabled: var(--neutral-300);
+    --stroke-interactive: var(--brand-500);
     //foreground
     --fg-primary: var(--neutral-900);
     --fg-secondary: var(--neutral-600);
     --fg-placeholder: var(--neutral-400);
     --fg-on-color: var(--white);
     --fg-on-color-disabled: var(--neutral-500);
-    --fg-helper: var(--neutral-500);
-    --fg-error: var(--red-600);
+    --fg-tertiary: var(--neutral-500);
     --fg-inverse: var(--white);
     --fg-disabled: var(--neutral-400);
+    --fg-error: var(--red-500);
+    --fg-success: var(--green-500);
+    --fg-warning: var(--yellow-500);
+    --fg-info: var(--blue-500);
+    --fg-error-inverse: var(--red-400);
+    --fg-success-inverse: var(--green-400);
+    --fg-warning-inverse: var(--yellow-400);
+    --fg-info-inverse: var(--brand-400);
+
     //link
     --link-primary: var(--brand-500);
     --link-primary-hover: var(--brand-700);
     --link-secondary: var(--neutral-900);
-    --link-secondary-hover: var(--neutral-950);
     --link-inverse: var(--brand-400);
     --link-inverse-hover: var(--brand-300);
     --link-visited: var(--purple-600);
     // support
-    --support-error: var(--red-500);
-    --support-success: var(--green-500);
-    --support-warning: var(--yellow-500);
-    --support-info: var(--blue-500);
-    --support-error-inverse: var(--red-400);
-    --support-success-inverse: var(--green-400);
-    --support-warning-inverse: var(--yellow-400);
-    --support-info-inverse: var(--brand-400);
     // miscellaneous
     --focus: var(--brand-500);
-    --support-caution-undefined: var(--purple-600);
-    --focus-inset: var(--white);
     --focus-inverse: var(--white);
     --interactive: var(--brand-500);
     --highlight: var(--brand-200);
@@ -200,7 +198,7 @@
     // button
     --button-brand: var(--brand-500);
     --button-brand-hover: var(--brand-600);
-    --button-brand-active: var(--brand-700);
+    --button-brand-active: var(--brand-800);
     --button-primary: var(--neutral-900);
     --button-primary-hover: var(--neutral-800);
     --button-primary-active: var(--neutral-600);
@@ -355,7 +353,7 @@
 
   //btn
   .tw-btn {
-    @apply tw-px-4 tw-h-10 tw-inline-flex tw-gap-2 tw-whitespace-nowrap tw-rounded-full tw-text-center tw-justify-center tw-items-center tw-text-base tw-leading-loose tw-font-medium tw-align-middle tw-cursor-pointer focus-visible:tw-outline-none focus-visible:tw-ring-2 focus-visible:tw-ring-focus focus-visible:tw-ring-offset-1 disabled:tw-bg-[--button-disabled] disabled:tw-text-fg-on-color-disabled disabled:tw-pointer-events-none tw-transition-colors tw-duration-150;
+    @apply tw-px-4 tw-h-10 tw-inline-flex tw-gap-2 tw-whitespace-nowrap tw-rounded-full tw-text-center tw-justify-center tw-items-center tw-text-base tw-leading-loose tw-font-medium tw-align-middle tw-cursor-pointer focus-visible:tw-outline-none focus-visible:tw-ring-2 focus-visible:tw-ring-focus focus-visible:tw-ring-offset-1 disabled:tw-bg-[var(--button-disabled)] disabled:tw-text-fg-on-color-disabled disabled:tw-pointer-events-none tw-transition-colors tw-duration-150;
   }
   //btn styles
   .tw-btn-brand {
@@ -373,8 +371,11 @@
   .tw-btn-ghost {
     @apply tw-text-fg-primary hover:tw-bg-background-hover active:tw-bg-background-active;
   }
-  .tw.btn-link {
-    @apply tw-px-0 tw-py-0 tw-text-link-primary hover:tw-text-link-primary-hover;
+  .tw-link {
+    @apply tw-inline-flex tw-items-center tw-text-base tw-font-medium tw-gap-2 tw-text-link-primary hover:tw-text-link-primary-hover hover:tw-underline disabled:tw-text-fg-disabled disabled:tw-pointer-events-none visited:tw-text-link-visited;
+  }
+  .tw-link-secondary {
+    @apply tw-text-link-secondary hover:tw-text-link-secondary-hover;
   }
 
   //btn sizes

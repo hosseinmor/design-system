@@ -71,7 +71,6 @@
 
       <hr class="tw-border-t tw-border-border-subtle" />
 
-      <!-- 2. دکمه‌ها -->
       <section>
         <h2 class="heading-03 tw-mb-6">دکمه‌ها (Buttons)</h2>
 
@@ -85,7 +84,8 @@
             <button class="tw-btn tw-btn-brand tw-btn-sm">اسمال</button>
             <button class="tw-btn tw-btn-brand tw-btn-xs">اکسترا اسمال</button>
             <button class="tw-btn tw-btn-brand" disabled>Disabled</button>
-            <button class="tw-btn tw-btn-link">link</button>
+            <a href="#a" class="tw-link tw-link-primary">link primary</a>
+            <a href="#b" class="tw-link tw-link-secondary">link secondary</a>
           </div>
         </div>
 
@@ -234,8 +234,46 @@
         </div>
       </section>
 
-      <hr class="tw-border-t tw-border-border-subtle" />
-
+      <section>
+        <h2 class="heading-03 tw-mb-6">(links)</h2>
+        <div class="tw-space-y-4">
+          <h3 class="heading-compact-02">LINK primary + secondary</h3>
+          <div class="tw-flex tw-flex-wrap tw-items-center tw-gap-3 tw-text-white">
+            <a href="#a" class="tw-link tw-link-primary">link primary</a>
+            <a href="#b" class="tw-link tw-link-secondary">link secondary</a>
+            <a href="#a" class="tw-link tw-link-primary icon">
+              <span>مشاهده همه</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+              >
+                <path
+                  d="M6.47135 11.8047L2.66668 7.99999L6.47134 4.19532L7.41401 5.13799L5.21935 7.33332L13.6093 7.33332L13.6093 8.66666L5.21935 8.66666L7.41401 10.862L6.47135 11.8047Z"
+                  fill="currentcolor"
+                />
+              </svg>
+            </a>
+            <a href="#b" class="tw-link tw-link-secondary icon">
+              <span>مشاهده همه</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+              >
+                <path
+                  d="M6.47135 11.8047L2.66668 7.99999L6.47134 4.19532L7.41401 5.13799L5.21935 7.33332L13.6093 7.33332L13.6093 8.66666L5.21935 8.66666L7.41401 10.862L6.47135 11.8047Z"
+                  fill="currentcolor"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
       <!-- 3. فیلدها و فرم -->
       <section>
         <h2 class="heading-03 tw-mb-6">فیلدها</h2>
@@ -270,12 +308,8 @@
       <section>
         <h2 class="heading-03 tw-mb-6">تگ‌ها</h2>
         <div class="tw-flex tw-flex-wrap tw-gap-3">
-          <span class="tag">Brand</span>
-          <span
-            class="tw-inline-block tw-px-3 tw-py-1 tw-rounded-full tw-text-sm"
-            style="background: var(--tag-bg-blue); color: var(--tag-fg-blue)"
-            >Blue</span
-          >
+          <span class="tw-tag tw-tag-brand">Brand</span>
+          <span class="tw-tag tw-tag-cyan">Blue</span>
           <span
             class="tw-inline-block tw-px-3 tw-py-1 tw-rounded-full tw-text-sm"
             style="background: var(--tag-bg-green); color: var(--tag-fg-green)"
