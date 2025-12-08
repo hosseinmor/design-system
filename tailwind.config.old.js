@@ -6,55 +6,27 @@ module.exports = {
   prefix: 'tw-',
   theme: {
     fontSize: {
-      xs: ['0.625rem'],
-      sm: ['0.75rem'],
-      base: ['0.875rem'],
-      lg: ['1rem'],
-      xl: ['1.125rem'],
-      '2xl': ['1.25rem'],
-      '3xl': ['1.5rem'],
-      '4xl': ['2rem'],
-      '5xl': ['2.625rem'],
-      '6xl': ['3rem'],
-      '7xl': ['3.75rem'],
-      '8xl': ['4.5rem'],
-      '9xl': ['6rem'],
+      xs: ['0.625rem'] /* 10px */,
+      sm: ['0.75rem'] /* 12px */,
+      base: ['0.875rem'] /* 14px */,
+      lg: ['1rem'] /* 16px */,
+      xl: ['1.125rem'] /* 18px */,
+      '2xl': ['1.25rem'] /* 20px */,
+      '3xl': ['1.5rem'] /* 24px */,
+      '4xl': ['2rem'] /* 32px */,
+      '5xl': ['2.625rem'] /* 42px */,
+      '6xl': ['3rem'] /* 48px */,
+      '7xl': ['3.75rem'] /* 60px */,
+      '8xl': ['4.5rem'] /* 72px */,
+      '9xl': ['6rem'] /* 96px */,
     },
 
     extend: {
+      fontFamily: {
+        sans: ['Dana', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+      },
       colors: {
-        brand: {
-          50: '#eef3ff',
-          100: '#e0e8ff',
-          200: '#c6d4ff',
-          300: '#a4b7fd',
-          400: '#7f90fa',
-          500: '#5660f2',
-          600: '#4644e7',
-          700: '#3b36cc',
-          800: '#312ea5',
-          900: '#2d2e82',
-          950: '#1b1a4c',
-        },
-        // Neutral
-        neutral: {
-          50: '#f7f7f7',
-          100: '#f2f2f2',
-          200: '#ebebeb',
-          300: '#dddddd',
-          400: '#c1c1c1',
-          500: '#8c8c8c',
-          600: '#6c6c6c',
-          700: '#515151',
-          800: '#3f3f3f',
-          900: '#222222',
-          950: '#0a0a0a',
-        },
-
-        // رنگ‌های ثابت
-        white: '#fff',
-        black: '#000',
-
+        // Background
         background: 'var(--background)',
         'background-hover': 'var(--background-hover)',
         'background-active': 'var(--background-active)',
@@ -64,6 +36,7 @@ module.exports = {
         'background-inverse-hover': 'var(--background-inverse-hover)',
         'background-brand': 'var(--background-brand)',
 
+        // Surface
         'surface-primary': 'var(--surface-primary)',
         'surface-primary-hover': 'var(--surface-primary-hover)',
         'surface-primary-active': 'var(--surface-primary-active)',
@@ -80,9 +53,11 @@ module.exports = {
         'surface-accent-secondary': 'var(--surface-accent-secondary)',
         'surface-accent-tertiary': 'var(--surface-accent-tertiary)',
 
+        // Field
         field: 'var(--field)',
         'field-hover': 'var(--field-hover)',
 
+        // Border
         'border-subtle': 'var(--border-subtle)',
         'border-strong': 'var(--border-strong)',
         'border-tile': 'var(--border-tile)',
@@ -90,6 +65,7 @@ module.exports = {
         'border-disabled': 'var(--border-disabled)',
         'border-interactive': 'var(--border-interactive)',
 
+        // Foreground
         'fg-primary': 'var(--fg-primary)',
         'fg-secondary': 'var(--fg-secondary)',
         'fg-placeholder': 'var(--fg-placeholder)',
@@ -100,6 +76,7 @@ module.exports = {
         'fg-inverse': 'var(--fg-inverse)',
         'fg-disabled': 'var(--fg-disabled)',
 
+        // Link
         'link-primary': 'var(--link-primary)',
         'link-primary-hover': 'var(--link-primary-hover)',
         'link-secondary': 'var(--link-secondary)',
@@ -108,6 +85,7 @@ module.exports = {
         'link-inverse-hover': 'var(--link-inverse-hover)',
         'link-visited': 'var(--link-visited)',
 
+        // Support
         'support-error': 'var(--support-error)',
         'support-success': 'var(--support-success)',
         'support-warning': 'var(--support-warning)',
@@ -117,6 +95,7 @@ module.exports = {
         'support-warning-inverse': 'var(--support-warning-inverse)',
         'support-info-inverse': 'var(--support-info-inverse)',
 
+        // Miscellaneous
         focus: 'var(--focus)',
         'support-caution-undefined': 'var(--support-caution-undefined)',
         'focus-inset': 'var(--focus-inset)',
@@ -126,9 +105,6 @@ module.exports = {
         overlay: 'var(--overlay)',
         'skeleton-element': 'var(--skeleton-element)',
         'skeleton-background': 'var(--skeleton-background)',
-      },
-      fontFamily: {
-        sans: ['Dana', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
     },
     plugins: [],

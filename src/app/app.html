@@ -71,7 +71,6 @@
 
       <hr class="tw-border-t tw-border-border-subtle" />
 
-      <!-- 2. دکمه‌ها -->
       <section>
         <h2 class="heading-03 tw-mb-6">دکمه‌ها (Buttons)</h2>
 
@@ -85,7 +84,8 @@
             <button class="tw-btn tw-btn-brand tw-btn-sm">اسمال</button>
             <button class="tw-btn tw-btn-brand tw-btn-xs">اکسترا اسمال</button>
             <button class="tw-btn tw-btn-brand" disabled>Disabled</button>
-            <button class="tw-btn tw-btn-link">link</button>
+            <a href="#a" class="tw-link tw-link-primary">link primary</a>
+            <a href="#b" class="tw-link tw-link-secondary">link secondary</a>
           </div>
         </div>
 
@@ -234,8 +234,46 @@
         </div>
       </section>
 
-      <hr class="tw-border-t tw-border-border-subtle" />
-
+      <section>
+        <h2 class="heading-03 tw-mb-6">(links)</h2>
+        <div class="tw-space-y-4">
+          <h3 class="heading-compact-02">LINK primary + secondary</h3>
+          <div class="tw-flex tw-flex-wrap tw-items-center tw-gap-3 tw-text-white">
+            <a href="#a" class="tw-link tw-link-primary">link primary</a>
+            <a href="#b" class="tw-link tw-link-secondary">link secondary</a>
+            <a href="#a" class="tw-link tw-link-primary icon">
+              <span>مشاهده همه</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+              >
+                <path
+                  d="M6.47135 11.8047L2.66668 7.99999L6.47134 4.19532L7.41401 5.13799L5.21935 7.33332L13.6093 7.33332L13.6093 8.66666L5.21935 8.66666L7.41401 10.862L6.47135 11.8047Z"
+                  fill="currentcolor"
+                />
+              </svg>
+            </a>
+            <a href="#b" class="tw-link tw-link-secondary icon">
+              <span>مشاهده همه</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+              >
+                <path
+                  d="M6.47135 11.8047L2.66668 7.99999L6.47134 4.19532L7.41401 5.13799L5.21935 7.33332L13.6093 7.33332L13.6093 8.66666L5.21935 8.66666L7.41401 10.862L6.47135 11.8047Z"
+                  fill="currentcolor"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
       <!-- 3. فیلدها و فرم -->
       <section>
         <h2 class="heading-03 tw-mb-6">فیلدها</h2>
@@ -270,32 +308,14 @@
       <section>
         <h2 class="heading-03 tw-mb-6">تگ‌ها</h2>
         <div class="tw-flex tw-flex-wrap tw-gap-3">
-          <span class="tag">Brand</span>
-          <span
-            class="tw-inline-block tw-px-3 tw-py-1 tw-rounded-full tw-text-sm"
-            style="background: var(--tag-bg-blue); color: var(--tag-fg-blue)"
-            >Blue</span
-          >
-          <span
-            class="tw-inline-block tw-px-3 tw-py-1 tw-rounded-full tw-text-sm"
-            style="background: var(--tag-bg-green); color: var(--tag-fg-green)"
-            >Success</span
-          >
-          <span
-            class="tw-inline-block tw-px-3 tw-py-1 tw-rounded-full tw-text-sm"
-            style="background: var(--tag-bg-red); color: var(--tag-fg-red)"
-            >Error</span
-          >
-          <span
-            class="tw-inline-block tw-px-3 tw-py-1 tw-rounded-full tw-text-sm"
-            style="background: var(--tag-bg-yellow); color: var(--tag-fg-yellow)"
-            >Warning</span
-          >
-          <span
-            class="tw-inline-block tw-px-3 tw-py-1 tw-rounded-full tw-text-sm"
-            style="background: var(--tag-bg-gray); color: var(--tag-fg-gray)"
-            >Gray</span
-          >
+          <span class="tw-tag tw-tag-brand">Brand</span>
+          <span class="tw-tag tw-tag-cyan">cyan</span>
+          <span class="tw-tag tw-tag-green">green</span>
+          <span class="tw-tag tw-tag-purple">purple</span>
+          <span class="tw-tag tw-tag-red">red</span>
+          <span class="tw-tag tw-tag-teal">teal</span>
+          <span class="tw-tag tw-tag-gray">gray</span>
+          <span class="tw-tag tw-tag-yellow">yellow</span>
         </div>
       </section>
 
@@ -310,68 +330,57 @@
           <h3 class="heading-compact-02 tw-mb-3">Brand</h3>
           <div class="tw-flex tw-gap-2 tw-flex-wrap">
             <div
-              class="tw-w-20 tw-h-20 tw-rounded tw-flex tw-items-center tw-justify-center tw-text-white tw-font-bold"
-              style="background: var(--brand-50)"
+              class="tw-w-20 tw-bg-brand-50 tw-h-20 tw-rounded tw-flex tw-items-center tw-justify-center tw-text-black tw-font-bold"
             >
               50
             </div>
             <div
-              class="tw-w-20 tw-h-20 tw-rounded tw-flex tw-items-center tw-justify-center tw-text-white tw-font-bold"
-              style="background: var(--brand-100)"
+              class="tw-w-20 tw-bg-brand-100 tw-h-20 tw-rounded tw-flex tw-items-center tw-justify-center tw-text-black tw-font-bold"
             >
               100
             </div>
             <div
-              class="tw-w-20 tw-h-20 tw-rounded tw-flex tw-items-center tw-justify-center tw-text-white tw-font-bold"
-              style="background: var(--brand-200)"
+              class="tw-w-20 tw-bg-brand-200 tw-h-20 tw-rounded tw-flex tw-items-center tw-justify-center tw-text-black tw-font-bold"
             >
               200
             </div>
             <div
-              class="tw-w-20 tw-h-20 tw-rounded tw-flex tw-items-center tw-justify-center tw-text-white tw-font-bold"
-              style="background: var(--brand-300)"
+              class="tw-w-20 tw-bg-brand-300 tw-h-20 tw-rounded tw-flex tw-items-center tw-justify-center tw-text-black tw-font-bold"
             >
               300
             </div>
             <div
-              class="tw-w-20 tw-h-20 tw-rounded tw-flex tw-items-center tw-justify-center tw-text-white tw-font-bold"
-              style="background: var(--brand-400)"
+              class="tw-w-20 tw-bg-brand-400 tw-h-20 tw-rounded tw-flex tw-items-center tw-justify-center tw-text-white tw-font-bold"
             >
               400
             </div>
             <div
-              class="tw-w-20 tw-h-20 tw-rounded tw-flex tw-items-center tw-justify-center tw-text-white tw-font-bold"
-              style="background: var(--brand-500)"
+              class="tw-w-20 tw-bg-brand-500 tw-h-20 tw-rounded tw-flex tw-items-center tw-justify-center tw-text-white tw-font-bold"
             >
               500
             </div>
             <div
-              class="tw-w-20 tw-h-20 tw-rounded tw-flex tw-items-center tw-justify-center tw-text-white tw-font-bold"
-              style="background: var(--brand-600)"
+              class="tw-w-20 tw-bg-brand-600 tw-h-20 tw-rounded tw-flex tw-items-center tw-justify-center tw-text-white tw-font-bold"
             >
               600
             </div>
             <div
-              class="tw-w-20 tw-h-20 tw-rounded tw-flex tw-items-center tw-justify-center tw-text-white tw-font-bold"
-              style="background: var(--brand-700)"
+              class="tw-w-20 tw-bg-brand-700 tw-h-20 tw-rounded tw-flex tw-items-center tw-justify-center tw-text-white tw-font-bold"
             >
               700
             </div>
             <div
-              class="tw-w-20 tw-h-20 tw-rounded tw-flex tw-items-center tw-justify-center tw-text-white tw-font-bold"
-              style="background: var(--brand-800)"
+              class="tw-w-20 tw-bg-brand-800 tw-h-20 tw-rounded tw-flex tw-items-center tw-justify-center tw-text-white tw-font-bold"
             >
               800
             </div>
             <div
-              class="tw-w-20 tw-h-20 tw-rounded tw-flex tw-items-center tw-justify-center tw-text-white tw-font-bold"
-              style="background: var(--brand-900)"
+              class="tw-w-20 tw-bg-brand-900 tw-h-20 tw-rounded tw-flex tw-items-center tw-justify-center tw-text-white tw-font-bold"
             >
               900
             </div>
             <div
-              class="tw-w-20 tw-h-20 tw-rounded tw-flex tw-items-center tw-justify-center tw-text-white tw-font-bold"
-              style="background: var(--brand-950)"
+              class="tw-w-20 tw-bg-brand-950 tw-h-20 tw-rounded tw-flex tw-items-center tw-justify-center tw-text-white tw-font-bold"
             >
               950
             </div>
@@ -383,68 +392,57 @@
           <h3 class="heading-compact-02 tw-mb-3">Neutral</h3>
           <div class="tw-flex tw-gap-2 tw-flex-wrap">
             <div
-              class="tw-w-20 tw-h-20 tw-rounded tw-flex tw-items-center tw-justify-center tw-text-black tw-font-bold"
-              style="background: var(--neutral-50)"
+              class="tw-w-20 tw-bg-neutral-50 tw-h-20 tw-rounded tw-flex tw-items-center tw-justify-center tw-text-black tw-font-bold"
             >
               50
             </div>
             <div
-              class="tw-w-20 tw-h-20 tw-rounded tw-flex tw-items-center tw-justify-center tw-text-black tw-font-bold"
-              style="background: var(--neutral-100)"
+              class="tw-w-20 tw-bg-neutral-100 tw-h-20 tw-rounded tw-flex tw-items-center tw-justify-center tw-text-black tw-font-bold"
             >
               100
             </div>
             <div
-              class="tw-w-20 tw-h-20 tw-rounded tw-flex tw-items-center tw-justify-center tw-text-black tw-font-bold"
-              style="background: var(--neutral-200)"
+              class="tw-w-20 tw-bg-neutral-200 tw-h-20 tw-rounded tw-flex tw-items-center tw-justify-center tw-text-black tw-font-bold"
             >
               200
             </div>
             <div
-              class="tw-w-20 tw-h-20 tw-rounded tw-flex tw-items-center tw-justify-center tw-text-black tw-font-bold"
-              style="background: var(--neutral-300)"
+              class="tw-w-20 tw-bg-neutral-300 tw-h-20 tw-rounded tw-flex tw-items-center tw-justify-center tw-text-black tw-font-bold"
             >
               300
             </div>
             <div
-              class="tw-w-20 tw-h-20 tw-rounded tw-flex tw-items-center tw-justify-center tw-text-white tw-font-bold"
-              style="background: var(--neutral-400)"
+              class="tw-w-20 tw-bg-neutral-400 tw-h-20 tw-rounded tw-flex tw-items-center tw-justify-center tw-text-white tw-font-bold"
             >
               400
             </div>
             <div
-              class="tw-w-20 tw-h-20 tw-rounded tw-flex tw-items-center tw-justify-center tw-text-white tw-font-bold"
-              style="background: var(--neutral-500)"
+              class="tw-w-20 tw-bg-neutral-500 tw-h-20 tw-rounded tw-flex tw-items-center tw-justify-center tw-text-white tw-font-bold"
             >
               500
             </div>
             <div
-              class="tw-w-20 tw-h-20 tw-rounded tw-flex tw-items-center tw-justify-center tw-text-white tw-font-bold"
-              style="background: var(--neutral-600)"
+              class="tw-w-20 tw-h-20 tw-bg-neutral-600 tw-rounded tw-flex tw-items-center tw-justify-center tw-text-white tw-font-bold"
             >
               600
             </div>
             <div
-              class="tw-w-20 tw-h-20 tw-rounded tw-flex tw-items-center tw-justify-center tw-text-white tw-font-bold"
-              style="background: var(--neutral-700)"
+              class="tw-w-20 tw-bg-neutral-700 tw-h-20 tw-rounded tw-flex tw-items-center tw-justify-center tw-text-white tw-font-bold"
             >
               700
             </div>
             <div
-              class="tw-w-20 tw-h-20 tw-rounded tw-flex tw-items-center tw-justify-center tw-text-white tw-font-bold"
-              style="background: var(--neutral-800)"
+              class="tw-w-20 tw-bg-neutral-800 tw-h-20 tw-rounded tw-flex tw-items-center tw-justify-center tw-text-white tw-font-bold"
             >
               800
             </div>
             <div
-              class="tw-w-20 tw-h-20 tw-rounded tw-flex tw-items-center tw-justify-center tw-text-white tw-font-bold"
-              style="background: var(--neutral-900)"
+              class="tw-w-20 tw-bg-neutral-900 tw-h-20 tw-rounded tw-flex tw-items-center tw-justify-center tw-text-white tw-font-bold"
             >
               900
             </div>
             <div
-              class="tw-w-20 tw-h-20 tw-rounded tw-flex tw-items-center tw-justify-center tw-text-white tw-font-bold"
-              style="background: var(--neutral-950)"
+              class="tw-w-20 tw-bg-neutral-950 tw-h-20 tw-rounded tw-flex tw-items-center tw-justify-center tw-text-white tw-font-bold"
             >
               950
             </div>
